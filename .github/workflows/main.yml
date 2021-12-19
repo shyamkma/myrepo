@@ -8,9 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Cache modules
-        uses: actions/cache@v1
-        id: yarn-cache
         with:
           node-version: 12.x
           path: node_modules
