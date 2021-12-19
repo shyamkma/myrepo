@@ -31,4 +31,4 @@ jobs:
       - name: Build
         run: yarn build
       - name: Deploy
-        run: aws s3 sync ./home/cloudshell-user/builddir s3://shyamjibuk1
+        run: aws s3 sync ./out s3://shyamjibuk1
