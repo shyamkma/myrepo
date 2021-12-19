@@ -1,10 +1,8 @@
 name: Build & deploy
-
 on:
   push:
     branches:
       - master
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -22,7 +20,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AKIASAPLN5SPE5UMGSZ5 }}
           aws-secret-access-key: ${{ secrets.QVuvAIhIrBW+Mhpo4CvHdguy+5yt9KG16+oYQF1P }}
-          SessionToken: IQoJb3JpZ2luX2VjEOr//////////wEaCXVzLWVhc3QtMiJGMEQCIG2PKcz+5BiIfXqqe3sgrLsJrFxmgVzb8ciySoNNeWLDAiAXYIfyjHTDnRscbi2qYqXxzcSVm76LVOf0FdcX+BSBrSr0AQjT//////////8BEAAaDDEzODQ2OTU2NzY0NiIMeaVeJxi+NMQ9/EaqKsgBa/AG3K0IuMuwTCWgyC3lXkhShLlv2oHPJ/MEDH1ZHF7W6LdHuzLAyUq7xlnTOxI9eZ8WX3XXzu3Qe1VBtGSmZfcDeXGvAsvcW9gSokRm/TJUrknuzeNUhi0RFCQJM4P8IKE70CM4SIandWpyYGX/JWLSsi3uuA01dTKEMxyU+BIORnpGnq603NHctTPcfal2MC5RcHydzvgVPkvd8/UQfKwOX4vDBjO85cw33lNaOO4NM8iOXGucaEsO2QpcDfjtxWQjF0TQIyAwpYn8jQY6mQFLMzHFL+gts4jkwnY81m875IwA1mjm6RhJrbY3LXPh39h58cOl9prGBgCz2ZZuvhem5S7n18LZFMWrwU6tkzkXZij/uo21f1gZ3UphHLtcpNteUnmRwWUoQHPvC9Qf/D1H2SYznQyURE7y1JcVK+9HT1WY0eosfkQZG8Q5igC0YZD6gvjDY5I/+rG7PzrXtlG6oCbsDbHNOMo=
+          SessionToken: ${{ secrets.IQoJb3JpZ2luX2VjEOr//////////wEaCXVzLWVhc3QtMiJGMEQCIG2PKcz+5BiIfXqqe3sgrLsJrFxmgVzb8ciySoNNeWLDAiAXYIfyjHTDnRscbi2qYqXxzcSVm76LVOf0FdcX+BSBrSr0AQjT//////////8BEAAaDDEzODQ2OTU2NzY0NiIMeaVeJxi+NMQ9/EaqKsgBa/AG3K0IuMuwTCWgyC3lXkhShLlv2oHPJ/MEDH1ZHF7W6LdHuzLAyUq7xlnTOxI9eZ8WX3XXzu3Qe1VBtGSmZfcDeXGvAsvcW9gSokRm/TJUrknuzeNUhi0RFCQJM4P8IKE70CM4SIandWpyYGX/JWLSsi3uuA01dTKEMxyU+BIORnpGnq603NHctTPcfal2MC5RcHydzvgVPkvd8/UQfKwOX4vDBjO85cw33lNaOO4NM8iOXGucaEsO2QpcDfjtxWQjF0TQIyAwpYn8jQY6mQFLMzHFL+gts4jkwnY81m875IwA1mjm6RhJrbY3LXPh39h58cOl9prGBgCz2ZZuvhem5S7n18LZFMWrwU6tkzkXZij/uo21f1gZ3UphHLtcpNteUnmRwWUoQHPvC9Qf/D1H2SYznQyURE7y1JcVK+9HT1WY0eosfkQZG8Q5igC0YZD6gvjDY5I/+rG7PzrXtlG6oCbsDbHNOMo= }}
           aws-region: us-east-2
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
